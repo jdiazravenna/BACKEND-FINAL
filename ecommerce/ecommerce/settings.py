@@ -114,11 +114,11 @@ AUTH_USER_MODEL = 'users.CustomUser'
 
 DATABASES = {
     'default': {
-        'ENGINE': os.environ("ENGINE"),
-        'NAME': os.environ("NAME"),
-        'USER': os.environ("USER"),  # Usuario configurado
-        'PASSWORD': os.environ("PASSWORD"),  # Contraseña configurada al instalar PostgreSQL
-        'HOST': os.environ("HOST")  # Servidor local
+        'ENGINE': os.environ["ENGINE"],
+        'NAME': os.environ["NAME"],
+        'USER': os.environ["USER"],  # Usuario configurado
+        'PASSWORD': os.environ["PASSWORD"],  # Contraseña configurada al instalar PostgreSQL
+        'HOST': os.environ["HOST"]  # Servidor local
         # 'PORT': '5432',       # Puerto predeterminado
     }
 }
