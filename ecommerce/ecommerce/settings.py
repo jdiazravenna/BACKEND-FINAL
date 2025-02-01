@@ -15,6 +15,7 @@ from datetime import timedelta
 from dotenv import load_dotenv
 import os
 load_dotenv()
+print("ENGINE:", os.getenv("ENGINE"))
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -114,11 +115,11 @@ AUTH_USER_MODEL = 'users.CustomUser'
 
 DATABASES = {
     'default': {
-        'ENGINE': os.environ["ENGINE"],
-        'NAME': os.environ["NAME"],
-        'USER': os.environ["USER"],  # Usuario configurado
-        'PASSWORD': os.environ["PASSWORD"],  # Contraseña configurada al instalar PostgreSQL
-        'HOST': os.environ["HOST"]  # Servidor local
+        'ENGINE': "django.db.backends.postgresql",
+        'NAME': "ecommerce_db_j9t1",
+        'USER': "ecommerce_db_j9t1_user",  # Usuario configurado
+        'PASSWORD': "PeLcc7uTgqJEHVjoBckLwoadfr2wI6V7",  # Contraseña configurada al instalar PostgreSQL
+        'HOST': "dpg-cuelu62j1k6c73ckkn70-a.virginia-postgres.render.com"  # Servidor local
         # 'PORT': '5432',       # Puerto predeterminado
     }
 }
