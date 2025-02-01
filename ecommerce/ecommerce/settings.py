@@ -79,7 +79,8 @@ MIDDLEWARE = [
 
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173", # Ajusta esto si tu frontend está en otro puerto
+    "http://localhost:5173",
+    "https://frontend-tecsup-final.vercel.app/" # Ajusta esto si tu frontend está en otro puerto
 ]
 
 CORS_ALLOW_CREDENTIALS = True
